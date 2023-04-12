@@ -1,0 +1,28 @@
+Description
+
+Извлечь совпадения
+До сих пор вы только проверяли, существует ли шаблон в строке или нет. Вы также можете извлечь фактические совпадения, которые вы нашли с помощью .match()метода.
+
+Чтобы использовать .match()метод, примените метод к строке и передайте регулярное выражение в круглых скобках.
+
+Вот пример:
+
+"Hello, World!".match(/Hello/);
+let ourStr = "Regular expressions";
+let ourRegex = /expressions/;
+ourStr.match(ourRegex);
+matchЗдесь вернется первый ["Hello"]и вернется второй ["expressions"].
+
+Обратите внимание, что .matchсинтаксис является «противоположным» методу, .testкоторый вы использовали до сих пор:
+
+'string'.match(/regex/);
+/regex/.test('string');
+Примените .match()метод для извлечения строки coding.
+
+
+Tests:
+
+
+The result should have the string coding
+Waiting:Your regex codingRegex should search for the string coding
+Waiting:You should use the .match() method.
